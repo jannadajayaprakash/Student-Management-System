@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Management System</h1>
+        <p>Serverless Application Using AWS</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add New Student</h2>
+
+            <form id="studentForm">
+                <input type="text" id="name" placeholder="Student Name" required>
+
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <input type="text" id="department" placeholder="Department" required>
+
+                <input type="number" id="year" placeholder="Year" min="1" max="5" required>
+
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section class="students-section">
+            <h2>Student Records</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Year</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
